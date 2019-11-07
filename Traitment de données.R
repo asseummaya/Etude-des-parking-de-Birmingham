@@ -1,6 +1,6 @@
 #question1 :
-#importation de donnée 
-data=read.csv("C:/Users/Midou/Desktop/nonSuppprojet/dataset.csv")
+#importation de donnÃ©e 
+data=read.csv(" https://archive.ics.uci.edu/ml/machine-learning-databases/00482.csv")
 
 #occupancy > capcity
 for (i in c(1:dim(data)[1])) {
@@ -15,7 +15,7 @@ for (i in c(1:dim(data)[1])) {
     data[i,3]=data[i,3]/data[i,2]
   }
 
-#n°et noms  des parking
+#nÂ°et noms  des parking
 parkings=data.frame(table(factor(data$SystemCodeNumber)))[,1]
 freq=data.frame(table(factor(data$SystemCodeNumber)))[,2]
 index=matrix(nrow = 30,ncol = 2)
